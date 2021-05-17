@@ -236,7 +236,13 @@ header nav #menu li a:hover {
 
 #second_section iframe {
   position: absolute;
+
+  /*top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;*/
   inset: 0;
+
   height: 100%;
   width: 100%;
   border: 0.5rem solid #555a80;
@@ -277,10 +283,14 @@ header nav #menu li a:hover {
 #fourth_section .section_wrapper .galleri2 {
   grid-column: span 2;
 
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.5rem;
-  align-self: center;
+  align-self: center;*/
+
+  display: grid;
+  gap: 2vw;
+  grid: auto-flow 1fr / 1fr 1fr 1fr;
 }
 
 #fifth_section .section_wrapper ul {
