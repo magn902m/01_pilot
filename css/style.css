@@ -175,7 +175,7 @@ header nav #menu li a:hover {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
 
-  background-image: url(img/jpg/baggrundsbillede.jpg);
+  background-image: url(../img/webp/baggrundsbillede.webp);
   width: 100%;
   height: 100vw;
   margin: 0rem;
@@ -259,7 +259,7 @@ aside {
 }
 
 aside a img {
-  background-image: url(img/top_buttom.svg);
+  background-image: url(../img/icons/top_buttom.svg);
   width: 2.5rem;
 
   background-color: #222433;
@@ -278,14 +278,14 @@ aside a img:hover {
 footer {
   background-color: #2b2d40;
   border-top: 0.2rem solid #555a80;
-  margin: 2rem 0rem 2.5rem 0rem;
 }
 
 footer p {
   text-align: start;
   font-size: 1rem;
   line-height: 1.5rem;
-  margin: 2.5rem 1rem 2.5rem 1rem;
+  padding: 2.5rem 1rem 2.5rem 1rem;
+  margin: 0rem;
 }
 
 /* Footer slut */
