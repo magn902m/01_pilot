@@ -1,0 +1,384 @@
+/* Generalt start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+
+body {
+  margin: 0rem;
+  background-color: #222433;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+}
+
+main > section {
+  grid-column: 2/3;
+}
+
+section {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+h1 {
+  font-family: minion-3, serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 0.3rem 0.2rem 0.1rem #000;
+}
+
+h2 {
+  font-family: minion-3, serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin: 1rem 0rem 1.5rem 0rem;
+}
+
+h3 {
+  font-family: minion-3, serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  font-size: 2.4rem;
+  margin: 1.5rem 0rem 0.5rem 0rem;
+}
+
+h4 {
+  font-family: minion-3, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 2rem;
+  margin: 1.5rem 0rem 0.5rem 0rem;
+}
+
+p {
+  font-family: minion-3, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 0rem 0rem 3rem 0rem;
+}
+
+a {
+  font-family: minion-3, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: minion-3, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #8088bf;
+}
+
+hr {
+  border: 0;
+  border-top: 0.2rem solid #2b2d40;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+/* Generalt slut */
+
+/* Menu start */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  margin: 0rem;
+}
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #2b2d40;
+  border-bottom: 0.2rem solid #555a80;
+}
+
+header nav #menu {
+  display: flex;
+  overflow-x: auto;
+
+  list-style: none;
+  gap: 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  margin: 0rem;
+}
+
+header nav #menu li {
+  width: 100%;
+}
+
+header nav #menu li a {
+  display: inline-block;
+  width: 100%;
+  font-family: minion-3, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+
+  color: #fff;
+  background-color: #2b2d40;
+}
+
+header nav #menu li a:hover {
+  color: #fff;
+  background-color: #8088bf;
+}
+
+/* Menu slut */
+
+/* Mobil version start */
+
+#first_section {
+  grid-column: 1/4;
+  margin: 0;
+  padding: 0;
+}
+
+#first_section .section_wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+
+  background-image: url(img/jpg/baggrundsbillede.jpg);
+  width: 100%;
+  height: 100vw;
+  margin: 0rem;
+
+  background-size: cover;
+  background-position: 83% 10%;
+  border-top: 0.5rem solid #555a80;
+  border-bottom: 0.5rem solid #555a80;
+}
+
+#first_section .section_wrapper h1 {
+  grid-column: 2/9;
+  grid-row: 3/4;
+  font-size: 2rem;
+}
+
+#first_section .section_wrapper h2 {
+  grid-column: 2/6;
+  grid-row: 4/6;
+  font-size: 1.5rem;
+  margin: 0rem;
+
+  text-shadow: 0.3rem 0.2rem 0.1rem #000;
+  text-transform: none;
+  font-family: minion-3, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#first_section .section_wrapper a {
+  grid-column: 8/10;
+  grid-row: 10;
+  align-self: center;
+  margin-bottom: 0.2rem;
+}
+
+#third_section .section_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+#third_section .section_wrapper p {
+  text-align: center;
+}
+
+#third_section .section_wrapper .txt1 {
+  font-weight: 700;
+  margin: 0.2rem 0rem 0.2rem 0rem;
+}
+
+#third_section .section_wrapper .txt2 {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#fourth_section .section_wrapper figure {
+  border: 0.5rem solid #555a80;
+}
+
+#fifth_section .section_wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+/* Mobil version slut */
+
+/* Top knap start */
+
+aside {
+  display: flex;
+  justify-content: center;
+
+  position: sticky;
+  bottom: 0;
+  padding: 0.8rem 1rem;
+  margin: 0;
+  gap: 1.25rem;
+}
+
+aside a img {
+  background-image: url(img/top_buttom.svg);
+  width: 2.5rem;
+
+  background-color: #222433;
+  border-radius: 0.2rem;
+}
+
+aside a img:hover {
+  background-color: #8088bf;
+  border-radius: 0.2rem;
+}
+
+/* Top knap slut */
+
+/* Footer start */
+
+footer {
+  background-color: #2b2d40;
+  border-top: 0.2rem solid #555a80;
+  margin: 2rem 0rem 2.5rem 0rem;
+}
+
+footer p {
+  text-align: start;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 2.5rem 1rem 2.5rem 1rem;
+}
+
+/* Footer slut */
+
+/* Reponsive start */
+
+@media (min-width: 573px) {
+  #first_section .section_wrapper h1 {
+    font-size: 2rem;
+    align-self: end;
+  }
+
+  #first_section .section_wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  #first_section .section_wrapper a {
+    grid-column: 9/10;
+  }
+
+  #third_section .section_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 780px) {
+  #first_section .section_wrapper h1 {
+    font-size: 2.5rem;
+  }
+
+  #first_section .section_wrapper h2 {
+    font-size: 2.2rem;
+  }
+
+  #third_section .section_wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #fifth_section .section_wrapper ul {
+    flex-direction: row;
+  }
+}
+
+/* Reponsive slut */
+
+/* Desktop version start */
+@media (min-width: 1200px) {
+  #first_section .section_wrapper h1 {
+    font-size: 3rem;
+  }
+
+  #first_section .section_wrapper h2 {
+    font-size: 2.8rem;
+  }
+
+  #second_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #second_section .section_wrapper .col_bottom {
+    grid-column: span 2;
+  }
+
+  #third_section .section_wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #fourth_section .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  #fourth_section .section_wrapper .col_top {
+    grid-column: span 2;
+  }
+
+  #fourth_section .section_wrapper figure {
+    margin: 0.5rem;
+  }
+
+  #fourth_section .section_wrapper h3,
+  #fourth_section .section_wrapper p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width: 1405px) {
+  header nav #menu {
+    justify-content: center;
+  }
+}
+
+/* Desktop version slut */
