@@ -231,6 +231,7 @@ header nav #menu li a:hover {
 
 #second_section video {
   border: 0.5rem solid #555a80;
+  width: 100%;
 }
 
 #second_section iframe {
@@ -239,6 +240,9 @@ header nav #menu li a:hover {
   height: 100%;
   width: 100%;
   border: 0.5rem solid #555a80;
+
+  /*width: 560; 
+  height: 315;*/
 }
 
 #second_section #se_interview {
@@ -266,8 +270,17 @@ header nav #menu li a:hover {
   margin-bottom: 0.5rem;
 }
 
-#fourth_section .section_wrapper figure {
+#fourth_section .section_wrapper figure img {
   border: 0.5rem solid #555a80;
+}
+
+#fourth_section .section_wrapper .galleri2 {
+  grid-column: span 2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+  align-self: center;
 }
 
 #fifth_section .section_wrapper ul {
@@ -378,6 +391,7 @@ footer p {
 /* Reponsive slut */
 
 /* Desktop version start */
+
 @media (min-width: 1200px) {
   #first_section .section_wrapper h1 {
     font-size: 3rem;
